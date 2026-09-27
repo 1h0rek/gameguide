@@ -1,73 +1,22 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GameGuide — гайды по играм</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+<!doctype html>
+<html lang="ru"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GameGuide — гайды по играм</title>
+<meta name="description" content="Быстрые гайды, решения головоломок и советы по играм.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
 <body>
-  <header class="header">
-    <div class="container nav">
-      <a class="logo" href="#">Game<span>Guide</span></a>
-      <nav>
-        <a href="#games">Игры</a>
-        <a href="#guides">Гайды</a>
-        <a href="#about">О сайте</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="container">
-        <p class="badge">🎮 GAMEGUIDE</p>
-        <h1>Не застревай.<br><span>Пройди игру.</span></h1>
-        <p class="hero-text">
-          Простые гайды, решения головоломок, советы и секреты для популярных игр.
-        </p>
-
-        <div class="search-box">
-          <input id="search" type="search" placeholder="Найти игру или гайд...">
-          <button id="searchBtn">Поиск</button>
-        </div>
-      </div>
-    </section>
-
-    <section id="games" class="section container">
-      <div class="section-title">
-        <div>
-          <p class="eyebrow">ПОПУЛЯРНОЕ</p>
-          <h2>Игры</h2>
-        </div>
-      </div>
-      <div id="gameGrid" class="game-grid"></div>
-    </section>
-
-    <section id="guides" class="section container">
-      <p class="eyebrow">ПОСЛЕДНИЕ МАТЕРИАЛЫ</p>
-      <h2>Гайды</h2>
-      <div id="guideList" class="guide-list"></div>
-    </section>
-
-    <section id="about" class="about section">
-      <div class="container">
-        <h2>GameGuide</h2>
-        <p>
-          Небольшой сайт с понятными гайдами по играм. Здесь можно найти
-          решения головоломок, советы по прохождению и полезные подсказки.
-        </p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>© 2026 GameGuide</p>
-      <p class="small">Рекламные и партнёрские ссылки могут приносить сайту комиссию.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<header><div class="wrap nav"><a class="logo" href="#">🎮 Game<span>Guide</span></a>
+<nav><a href="#games">Игры</a><a href="#guides">Гайды</a><a href="#about">О сайте</a></nav>
+<a class="btn" href="#guides">Найти гайд</a></div></header>
+<section class="hero"><div class="wrap hero-in"><div class="badge">🎮 БЫСТРЫЕ ГАЙДЫ ПО ИГРАМ</div>
+<h1>Не застревай.<br><em>Пройди игру.</em></h1>
+<p>Решения головоломок, секреты, советы и полезные подсказки — всё в одном месте.</p>
+<div class="search">⌕ <input id="search" placeholder="Например: Resident Evil 4, метро, оружие..."></div>
+<div class="links"><a href="#games">Популярные игры ↓</a> · <a href="#guides">Последние гайды ↓</a></div></div></section>
+<section id="games" class="section"><div class="wrap"><div class="head"><div><small>КАТАЛОГ</small><h2>Популярные игры</h2></div><span id="count"></span></div><div id="gamesGrid" class="games"></div></div></section>
+<section id="guides" class="section dark"><div class="wrap"><div class="head"><div><small>ПОМОЩЬ</small><h2>Последние гайды</h2></div></div><div id="guidesList" class="guides"></div></div></section>
+<section id="about" class="about"><div class="wrap about-box"><div><small>О GAMEGUIDE</small><h2>Меньше поиска — больше игры.</h2><p>Понятные и короткие гайды, чтобы нужное решение можно было найти за пару минут.</p></div><div class="stats"><b>4+<small>игры</small></b><b>∞<small>идей</small></b><b>24/7<small>онлайн</small></b></div></div></section>
+<footer><div class="wrap">© 2026 GameGuide · Реклама и партнёрские ссылки помогают поддерживать сайт.</div></footer>
+<script src="script.js"></script></body></html>
